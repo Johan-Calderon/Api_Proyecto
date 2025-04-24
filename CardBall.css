@@ -1,0 +1,60 @@
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .card-image {
+    transition: transform 0.3s ease;
+  }
+  
+  .card-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .kanji-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://i.etsystatic.com/15463244/r/il/400fd3/2638260079/il_1588xN.2638260079_gxuk.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    opacity: 0.1;
+    z-index: 1;
+  }
+  
+  .transformation-indicator {
+    margin-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 10px;
+    text-align: center;
+  }
+  
+  .transformation-indicator span {
+    color: #ffc107;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  
+  .pagination-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  
+  .dot {
+    height: 8px;
+    width: 8px;
+    background-color: #666;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 3px;
+  }
+  
+  .dot.active {
+    background-color: #ffc107;
+  }
